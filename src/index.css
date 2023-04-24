@@ -1,13 +1,239 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    position: relative;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+nav{
+    
+    padding: 0;
+    border-bottom: 4px solid rgb(57, 39, 39);
+}
+.nav-center{
+    width: 80%;
+    margin: auto;
+}
+.nav-center img{
+    width: 70px;
+}
+.rightalign{
+    float: right;
+    margin-top: 5px;
+    padding: 5px 15px;
+    
+    margin-left: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.rightalign:hover{
+    color: #9d9da0;
+    text-decoration: underline;
+    transition: 0.7s;
+}
+.abouttitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.aboutdata{
+    width: 40%;
+    margin: auto;
+    text-align:justify
+}
+.cocktaildetail{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cocktaildetail li{
+    list-style: none;
+}
+@media screen and (max-width:1000px)
+{
+    .aboutdata{
+        width: 100%;
+    }
+}
+.error h1{
+    text-align: center;
+    margin-top: 70px;
+}
+.goback{
+    text-decoration: none;
+    color: rgb(193, 205, 213);
+    background-color: rgb(124, 122, 97);
+    padding: 10px 40px;
+    border-radius: 2rem;
+    width: 60px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 250px
+}
+.image{
+    width: 100%;
+}
+.dataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.align{
+    margin-top: 20px;
+}
+.eachData{
+    flex-basis: 30%;
+    padding: 10px;
+    transition: 2s;
+
+}
+.eachData h2{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.left{
+    float: left;
+    color: black;
+}
+.right{
+    float: right;
+    color: black;
+}
+.eachData:hover{
+    background-color:rgb(100, 110, 110);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.searchbar{
+    width: 30%;
+    height: 30px;
+    
+    margin-bottom: 30px;
+    align-self: center;
+    margin-left: 35%;
+    border-radius: 0.5rem;
+    padding: 5px;
+    border-width: 3px;
+    font-size: 20px;
+}
+.searchBtn{
+    height: 37px;
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 0.3rem;
+    border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.singleCocktail{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.singleCocktail h1{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.singleCocktail img{
+    height: 50vh;
+    display: block;
+    margin: auto;
+    border: 2px solid rgb(129, 125, 125);
+    box-shadow: 10px 10px 5px lightblue;
+
+}
+.singleCocktail h3{
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+.loading{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20vh;
+}
+.search section{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.pear{
+    font-family: 'Cedarville Cursive', cursive;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.midd{
+    font-size: 20px;
+    text-align: center;
+}
+.midd ul li{
+    list-style: none;
+    transition: 1.5s;
+}
+.midd ul{
+    padding: 0;
+}
+.remove{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.remove:hover{
+    color: aqua;
+}
+.line{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+}
+.pear{
+    padding-top: 25px;
+}
+.last li i{
+   color: white;
+}
+.last ul li{
+    list-style: none;
+    line-height: 25px;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.last ul{
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.last ul li:hover{
+    color: aqua;
 }
