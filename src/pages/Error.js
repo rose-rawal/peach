@@ -1,6 +1,5 @@
 import React from 'react'
-import Cocktail from '../components/cocktail'
-import SearchForm from '../components/SearchForm'
+
 import { Link } from 'react-router-dom'
 const Error=()=>{
     return (

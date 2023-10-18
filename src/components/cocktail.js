@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import { useGlobalContext } from '../context'
 const Cocktail=()=>{
     const {cocktails}=useGlobalContext();
-    const handleClick=(n)=>{
-        
-    }
+   
     return (<div className='dataContainer'>
         {cocktails.map((n)=>{
             return(<Link to={`/cocktail/id:${n.id}`} key={n.id} className='eachData'>

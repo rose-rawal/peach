@@ -1,6 +1,5 @@
 import React from 'react'
-import Cocktail from '../components/cocktail'
-import SearchForm from '../components/SearchForm'
+
 const About=()=>{
     return (<div className='container'>
         <h1 className='abouttitle'>About Us</h1>
