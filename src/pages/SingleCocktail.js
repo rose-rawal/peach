@@ -9,17 +9,22 @@ const SingleCocktail=()=>{
     const{cocktails}=useGlobalContext()
     const [data,setData]=useState({})
     const datacollect=cocktails.find((n)=>{if(n.id===iddiv[1]) return n})
+    console.log(datacollect)
     useEffect(()=>{
          setData(datacollect)
     },[])
-   
     // console.log(iddiv)
     return (<section className='singleCocktail'>
         <h1>{data.name}</h1>
+        
         <img src={data.image} alt={data.name} />
+        
         <h3>Description:</h3>
-        <p>Type: {data.info}</p>
-        <p>Type of Glass: {data.glass}</p>
+        <br />
+        <p><span>Type:</span> {data.info}</p>
+        <p><span>Type of Glass:</span> {data.glass}</p>
+        <p><span>Ingredients:</span> {data.ingredients}</p>
+        <p><span>Instruction:</span> {data.instr}</p>
     </section>)
 
 }

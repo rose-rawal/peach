@@ -141,6 +141,10 @@ nav{
     width: 80%;
     margin: auto;
     text-align: center;
+    margin-bottom: 200px;
+}
+.singleCocktail span{
+    font-weight: bold;
 }
 .singleCocktail h1{
     font-size: 40px;

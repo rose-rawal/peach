@@ -13,7 +13,7 @@ const Bottom = () => {
         </ul></div>
         <div className='last'>Contact Us: <div className="line"></div><ul>
           <li><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</li>
-          <li><i class="fa fa-envelope" aria-hidden="true"></i>Email</li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:rooserwl@gmail.com">Email</a></li>
           <li><i class="fa fa-phone" aria-hidden="true"></i>Phone no</li>
           </ul></div>
     </footer>
