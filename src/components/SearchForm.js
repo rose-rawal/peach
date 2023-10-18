@@ -1,7 +1,7 @@
 import React from 'react'
 import { useGlobalContext } from '../context'
 const SearchForm=()=>{
-    const {setSearchTerm,searchTerm}=useGlobalContext()
+    const {setSearchTerm}=useGlobalContext()
     const handleChange=(e)=>{
         setSearchTerm(e.target.value)
     }
